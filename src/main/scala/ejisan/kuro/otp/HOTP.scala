@@ -148,9 +148,7 @@ class HOTP(
  *    println("You are authenticated!")
  *  }
  *  val code2 = hotp.generate(3l)
- *  hotp.validate(0l, 5, code2) foreach { gap =>
- *    println(s"You are authenticated! (gap: $gap)")
- *  }
+ *  hotp.validate(0l, 5, code2) foreach { gap => println(s"You are authenticated! (gap: $gap)")}
  * }}}
  * === Java ===
  * {{{
