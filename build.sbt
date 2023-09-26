@@ -38,12 +38,6 @@ scalacOptions ++= {
 
 scalacOptions in Compile in console := Nil
 
-scalacOptions in Compile in doc ++= Seq(
-  "-sourcepath", (baseDirectory in LocalProject("kuro-otp")).value.getAbsolutePath,
-  "-doc-title", "Kuro OTP (HOTP, TOTP)",
-  "-doc-footer", "Copyright (c) 2017 Ryo Ejima (ejisan), Apache License v2.0.",
-  "-doc-source-url", "https://github.com/ejisan/kuro-otp€{FILE_PATH}.scala")
-
 javacOptions ++= Seq("-source", "1.8")
 
 testOptions in Test ++= Seq(
