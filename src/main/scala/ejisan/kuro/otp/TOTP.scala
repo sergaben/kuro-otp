@@ -239,9 +239,7 @@ class TOTP(
  *    println("You are authenticated!")
  *  }
  *  val code2 = totp.generate(3l)
- *  totp.validate(5, code2) foreach { gap =>
- *    println(s"You are authenticated! (gap: $gap)")
- *  }
+ *  totp.validate(5, code2) foreach { gap => println(s"You are authenticated! (gap: $gap)") }
  * }}}
  * === Java ===
  * {{{
