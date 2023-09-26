@@ -2,7 +2,7 @@ name := """kuro-otp"""
 
 organization := "com.ejisan"
 
-version := "0.0.1-SNAPSHOTS"
+version := "0.0.1"
 
 scalaVersion := "2.12.2"
 
